@@ -1,6 +1,23 @@
         <footer>
 
-            <p class="copyright text-muted">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)" | markdownify }}</p>
+            <div class="copyright text-muted">
+                
+                <p>Powered by <a href="https://gohugo.io">
+                    <img class="logo" src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="Hugo" /></a>
+                and <a href="https://github.com/rstudio/blogdown">
+                    <img class="logo" src="https://bookdown.org/yihui/blogdown/images/logo.png" alt="R blogdown" /></a>
+                    
+                    
+                <i class="fa fa-paper-plane"></i>
+                
+<!--                </p> 
+            
+                <p> -->
+                
+                {{ markdownify "Theme based on [Minimal](https://github.com/calintat/minimal) and [Hallo](https://github.com/EmielH/hallo-hugo)." }}
+                </p>
+            
+            </div>
 
         </footer>
        

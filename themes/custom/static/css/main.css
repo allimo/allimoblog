@@ -16,14 +16,25 @@ main {
     max-width: 750px;
 }
 
-/*footer*/
-
-.copyright {
-    margin: 15px 0;
+img {
+    max-width: 100%;
 }
 
-/*home page*/
+/*apply accent colour to links*/
+a:link, a:visited {
+    color: var(--accent);
+}
 
+a.icon:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent) !important;
+}
+
+
+/*home page*/
 .intro {
     transform: translateY(22vh);
 }
@@ -44,19 +55,40 @@ main {
     border-radius: 50%;
 }
 
-/*apply accent colour to links*/
 
-a:link, a:visited {
-    color: var(--accent);
+/*navigation bar icons*/
+.navbar-icon {
+    font-size: 125%;
+    display: inline-block !important;
 }
 
-a.icon:hover {
-    text-decoration: none;
+/*coloured borders at top and bottom of the page*/
+.navbar.navbar-default {
+    border-top: var(--border-width) solid var(--accent);
 }
 
-a:hover {
-    color: var(--accent) !important;
+
+/*footer*/
+footer {
+    border-bottom: var(--border-width) solid var(--accent);
 }
+
+footer .fa {
+    margin: 0px 1.25vw;
+}
+
+.copyright {
+    margin: 15px 0;
+    font-size: small;
+    line-height: 1.1;
+}
+
+.logo {
+    max-height: 2.5rem;
+    max-width: 8rem;
+    display: inline;
+}
+
 
 /*paginator at bottom of list view*/
 
@@ -78,23 +110,4 @@ a:hover {
     background-color: var(--accent);
 }
 
-/*navigation bar icons*/
 
-.navbar-icon {
-    font-size: 125%;
-    display: inline-block !important;
-}
-
-/*coloured borders at top and bottom of the page*/
-
-.navbar.navbar-default {
-    border-top: var(--border-width) solid var(--accent);
-}
-
-footer {
-    border-bottom: var(--border-width) solid var(--accent);
-}
-
-img {
-    max-width: 100%;
-}
