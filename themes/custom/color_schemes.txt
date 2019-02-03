@@ -9,6 +9,7 @@
     outlines = false #bottom of navbar; snippet outline edge
 
 ## defaults ##
+# based on https://bootswatch.com/flatly/
     mainText = "black"
     mainBg = "white"
     accent = "#19BD9D"
@@ -19,6 +20,7 @@
     outlines = "#cccccc"
 
 ## yellowstone ##
+# based on https://www.rangerdoug.com/yellowstone-national-park-geyser
     mainText = "#F8F4E6"
     mainBg = "#404450"
     accent = "#FA8C3A"
@@ -29,6 +31,7 @@
     outlines = "#B5D0D2"
     
 ## hawaii volcanoes ##
+# based on https://www.rangerdoug.com/hawaii-national-park-0
     mainText = "#cccccc"
     mainBg = "#202231"
     accent = "#E98A3A"
