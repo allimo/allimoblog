@@ -1,0 +1,39 @@
+## CUSTOMIZE ##
+    mainText = false #general-purpose text color
+    mainBg = false #main page background color
+    accent = false #top & bottom border edges; link text; intro title
+    bright = false #link hover; intro subtitle
+    menuBg = false #navbar background
+    menuText = false #navbar & tag text color
+    codeFrame = false #snippet outline; tag background
+    outlines = false #bottom of navbar; snippet outline edge
+
+## defaults ##
+    mainText = "black"
+    mainBg = "white"
+    accent = "#19BD9D"
+    bright = "#3CE7C5"
+    menuBg = "#2D3F51"
+    menuText = "white"
+    codeFrame = "#7A8E90"
+    outlines = "#cccccc"
+
+## yellowstone ##
+    mainText = "#F8F4E6"
+    mainBg = "#404450"
+    accent = "#FA8C3A"
+    bright = "#FAD36E"
+    menuBg = "#326A81"
+    menuText = "#F9D477"
+    codeFrame = "#335B6F"
+    outlines = "#B5D0D2"
+    
+## hawaii volcanoes ##
+    mainText = "#cccccc"
+    mainBg = "#202231"
+    accent = "#E98A3A"
+    bright = "#E36441"
+    menuBg = "#6B5B80"
+    menuText = "#FDCD52"
+    codeFrame = "#403A57"
+    outlines = "#F19F2E"

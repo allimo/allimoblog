@@ -10,25 +10,25 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/", "_files$", "_cache$"]
     githubUsername = "allimo"
     author = "Allison Moberger"
     description = "Check this out."
-    profilePic = true
+    profilePic = true # if true, put your image in static/images/portrait.jpg
     showBorder = true # show top & bottom borders
     font = "Sarabun" # should match the name on Google Fonts!
     
 ## theme colors ##
-    #mainText = false
-    #mainBg = false
-    #accent = false
-    #bright = false
-    #menuBg = false
-    #menuText = false
-    #codeFrame = false
-    #outlines = false
+    mainText = "#F8F4E6"
+    mainBg = "#404450"
+    accent = "#FA8C3A"
+    bright = "#FAD36E"
+    menuBg = "#326A81"
+    menuText = "#F9D477"
+    codeFrame = "#335B6F"
+    outlines = "#B5D0D2"
     
     
 ## syntax highlighting ##
 # Uses highlightJS. See style gallery at https://highlightjs.org/static/demo/
     highlight = true
-    highlightStyle = "solarized-dark" #all lowercase, hyphenated name from highlightJS
+    highlightStyle = "obsidian" #all lowercase, hyphenated name from highlightJS
     highlightLanguages = ["r", "java", "bash", "json"]
 
 ## main site menu (left side) ##
