@@ -34,16 +34,19 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/", "_files$", "_cache$"]
 ## main site menu (left side) ##
 [[menu.main]]
     url = "/"
+    pre = "fa fa-home"
     name = "Home"
     weight = 1
     
 [[menu.main]]
     url = "/about/"
+    pre = "fa fa-question"
     name = "About"
     weight = 2
 
 [[menu.main]]
     url = "/post/"
+    pre = "fas fa-pencil-alt"
     name = "Posts"
     weight = 3
     
@@ -55,22 +58,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/", "_files$", "_cache$"]
 ## social/icons menu (right side) ##
 [[menu.icon]]
     url = "mailto:site@moberger.io"
-    name = "envelope"
+    name = "fa fa-envelope"
     weight = 1
 
 [[menu.icon]]
     url = "https://github.com/allimo/"
-    name = "github"
+    name = "fab fa-github"
     weight = 2
     
 [[menu.icon]]
     url = "https://www.linkedin.com/in/allimo/"
-    name = "linkedin"
+    name = "fab fa-linkedin-in"
     weight = 3
 
 [[menu.icon]]
     url = "https://twitter.com/allimoberger/"
-    name = "twitter"
+    name = "fab fa-twitter"
     weight = 4
 
 

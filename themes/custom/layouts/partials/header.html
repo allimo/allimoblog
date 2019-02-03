@@ -55,9 +55,11 @@
                 <div class="collapse navbar-collapse">
 
                     {{ if .Site.Menus.main }}
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav navbar-left">
                             {{ range sort .Site.Menus.main }}
-                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                <li><a href="{{ .URL }}">
+                                    {{ with .Pre }}<i class="{{ . }}"></i>{{ end }}
+                                    {{ .Name }}</a></li>
                             {{ end }}
                         </ul>
                     {{ end }}
@@ -65,7 +67,8 @@
                     {{ if .Site.Menus.icon }}
                         <ul class="nav navbar-nav navbar-right">
                             {{ range sort .Site.Menus.icon }}
-                                <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
+                                <li class="navbar-icon"><a href="{{ .URL }}">
+                                    <i class="{{ .Name }}"></i></a></li>
                             {{ end }}
                         </ul>
                     {{ end }}

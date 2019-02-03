@@ -76,12 +76,13 @@ a:active {
 /*navigation bar*/
 .navbar {
     background-color: var(--menu-bg) !important;
+    font-size: 1.8rem;
 }
-.navbar-nav .fa {
+.navbar-left i {
     margin-right: 3px;
 }
 .navbar-icon {
-    font-size: 125%;
+    /*font-size: 125%;*/
     display: inline-block !important;
 }
 .navbar.navbar-default {
@@ -91,7 +92,6 @@ a:active {
 .navbar a {
     color: var(--menu-text) !important;
     font-weight: bold;
-    font-size: large;
     margin: 8px 5px;
     padding: 7px 10px !important;
     border-radius: 3px;
