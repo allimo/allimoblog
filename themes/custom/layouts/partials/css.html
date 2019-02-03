@@ -2,11 +2,23 @@
 
     html body {
         font-family: '{{ .Site.Params.font }}', sans-serif;
-        background-color: {{ .Site.Params.backgroundColor | default "white" }};
+        background-color: var(--main-bg);
+        color: var(--main-text);
     }
 
     :root {
-        --accent: {{ .Site.Params.accent | default "#2196F3" }};
+        --main-bg: {{ .Site.Params.mainBg | default "white" }};
+        --main-text: {{ .Site.Params.mainText | default "black" }};
+        
+        --menu-bg: {{ .Site.Params.menuBg | default "#2D3F51" }};
+        --menu-text: {{ .Site.Params.menuText | default "white"}};
+        
+        --accent: {{ .Site.Params.accent | default "#19BD9D" }};
+        --bright: {{ .Site.Params.bright | default "#3CE7C5" }};
+        
+        --code-frame: {{ .Site.Params.codeFrame | default "#7A8E90"}};
+        --outlines: {{ .Site.Params.outlines | default "#cccccc"}};
+        
         --border-width: {{ if .Site.Params.showBorder | default false }} 5px {{ else }} 0 {{ end }};
     }
 

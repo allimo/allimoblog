@@ -19,6 +19,11 @@ main {
     max-width: 700px;
 }
 
+pre {
+    background-color: var(--code-frame) !important;
+    border-color: var(--outlines) !important;  
+}
+
 img {
     max-width: 100%;
 }
@@ -27,14 +32,15 @@ img {
 a:link, a:visited {
     color: var(--accent);
 }
-
-a.icon:hover {
-    text-decoration: none;
+a:hover, a:active {
+    color: var(--bright) !important;
+    text-decoration: none !important;
+}
+a:active {
+    font-weight: bold;
 }
 
-a:hover {
-    color: var(--accent) !important;
-}
+
 
 
 /*home page*/
@@ -44,26 +50,21 @@ a:hover {
 .column {
     flex: 1;
 }
-
-
 .intro .profile {
     width: 20vh;
     height: 20vh;
     border-radius: 50%;
 }
-
 .intro h1 {
-    color: #212121;
+    color: var(--accent);
     font-size: 12vh;
     margin-top: 0px;
 }
-
 .intro h2 {
-    color: #757575;
+    color: var(--bright);
     font-size: 3vmin;
     margin-top: 0px;
 }
-
 .intro p {
     margin-top: 2vh;
 }
@@ -72,33 +73,72 @@ a:hover {
 
 
 
-/*navigation bar icons*/
+/*navigation bar*/
+.navbar {
+    background-color: var(--menu-bg) !important;
+}
+.navbar-nav .fa {
+    margin-right: 3px;
+}
 .navbar-icon {
     font-size: 125%;
     display: inline-block !important;
 }
-
-/*coloured borders at top and bottom of the page*/
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
+    border-bottom: 1px solid var(--outlines);
 }
+.navbar a {
+    color: var(--menu-text) !important;
+    font-weight: bold;
+    font-size: large;
+    margin: 8px 5px;
+    padding: 7px 10px !important;
+    border-radius: 3px;
+}
+.navbar a:hover {
+    color: var(--menu-bg) !important;
+    background-color: var(--menu-text) !important;
+}
+
+/*squished navbar for small screens*/
+.navbar-brand {
+    margin-left: 20px !important;
+    padding-left: 15px;
+    height: 34px !important;
+    position: relative;
+    display: block;
+}
+.navbar-toggle {
+    background-color: transparent !important;
+    border: 1px solid var(--outlines) !important;
+}
+.navbar-toggle .icon-bar {
+    background-color: var(--outlines) !important;
+}
+.navbar-toggle:focus, .navbar-toggle:hover {
+    background-color: var(--outlines) !important;
+}
+.navbar-toggle:focus .icon-bar, .navbar-toggle:hover .icon-bar {
+    background-color: var(--menu-bg) !important;
+}
+
+
 
 
 /*footer*/
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
-
 footer .fa {
     margin: 0px 1.25vw;
+    color: var(--menu-bg);
 }
-
 .copyright {
-    margin: 15px 0;
+    margin-top: 15px;
     font-size: small;
     line-height: 1.1;
 }
-
 .logo {
     max-height: 2.5rem;
     max-width: 8rem;
@@ -106,24 +146,25 @@ footer .fa {
 }
 
 
-/*paginator at bottom of list view*/
 
-.pages {
-    padding: 15px 0;
-}
-
-.pages-icon {
-    padding: 0 15px;
-}
 
 /*list item for posts and projects*/
-
 .item {
     padding: 10px 0;
 }
-
 .item-tag {
-    background-color: var(--accent);
+    background-color: var(--code-frame);
+    color: var(--menu-text);
+    border-radius: 5px;
+}
+
+
+/*paginator at bottom of list view*/
+.pages {
+    padding: 15px 0;
+}
+.pages-icon {
+    padding: 0 15px;
 }
 
 

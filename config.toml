@@ -4,26 +4,33 @@ title = "allimoblog"
 theme = "custom" #based on 'minimal' but lots of modifications
 #disqusShortname = "username" # delete this to disable disqus comments
 #googleAnalytics = ""
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/", "_files$", "_cache$"]
 
 [params]
+    githubUsername = "allimo"
     author = "Allison Moberger"
     description = "Check this out."
-    githubUsername = "allimo"
     profilePic = true
     showBorder = true # show top & bottom borders
     font = "Sarabun" # should match the name on Google Fonts!
+    
+## theme colors ##
+    #mainText = false
+    #mainBg = false
+    #accent = false
+    #bright = false
+    #menuBg = false
+    #menuText = false
+    #codeFrame = false
+    #outlines = false
+    
     
 ## syntax highlighting ##
 # Uses highlightJS. See style gallery at https://highlightjs.org/static/demo/
     highlight = true
     highlightStyle = "solarized-dark" #all lowercase, hyphenated name from highlightJS
     highlightLanguages = ["r", "java", "bash", "json"]
-    
-## theme colors ##
-    accent = "green"
-    backgroundColor = "white"
-    
+
 ## main site menu (left side) ##
 [[menu.main]]
     url = "/"
