@@ -2,13 +2,29 @@
 
 <main>
 
-    <div class="intro">
+    <div class="container intro">
 
-        {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
-
-        <h1>{{ .Site.Title }}</h1>
-
-        <h2>{{ markdownify .Site.Params.Description }}</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                {{ if .Site.Params.profilePic }} 
+                    <img class="profile" src="images/portrait.jpg" alt="portrait">
+                {{ end }}
+            </div>
+            <div class="col-sm-8">
+                <h1>{{ .Site.Title }}</h1>
+                <h2>{{ markdownify .Site.Params.Description }}</h2>
+            </div>
+        </div>
+        <!-- #add splashpage content later? -->
+        <!--
+        <div class="row">
+            <div class="col-sm-12">
+                <p>"fdjsfkdjs klfajlds; a.dfjskafeh fjdjrshu hfuernkj djksfljuehwbf edrihfejwhafjk aid ;ffjdhf kliwkq fklj f"</p>
+            </div>
+        </div>
+        -->
+        
+        
 
     </div>
 

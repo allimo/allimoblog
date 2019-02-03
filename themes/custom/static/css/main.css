@@ -15,6 +15,9 @@ main {
     flex: 1 0 auto;
     max-width: 750px;
 }
+.container {
+    max-width: 700px;
+}
 
 img {
     max-width: 100%;
@@ -38,22 +41,35 @@ a:hover {
 .intro {
     transform: translateY(22vh);
 }
-
-.intro > h1 {
-    color: #212121;
-    font-size: 12vh;
+.column {
+    flex: 1;
 }
 
-.intro > h2 {
-    color: #757575;
-    font-size: 3vmin;
-}
 
-.intro > .profile {
-    width: 10vh;
-    height: 10vh;
+.intro .profile {
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
 }
+
+.intro h1 {
+    color: #212121;
+    font-size: 12vh;
+    margin-top: 0px;
+}
+
+.intro h2 {
+    color: #757575;
+    font-size: 3vmin;
+    margin-top: 0px;
+}
+
+.intro p {
+    margin-top: 2vh;
+}
+
+
+
 
 
 /*navigation bar icons*/
