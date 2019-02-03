@@ -10,7 +10,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     author = "Allison Moberger"
     description = "Check this out."
     githubUsername = "allimo"
-    showBorder = true
+    showBorder = true # show top & bottom borders
     font = "Sarabun" # should match the name on Google Fonts!
     
 ## syntax highlighting ##
