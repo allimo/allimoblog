@@ -28,6 +28,11 @@ pre, .box {
     border-radius: 4px;
 }
 
+p code {
+    background-color: var(--code-frame) !important;
+    color: var(--main-text) !important;
+}
+
 .box .row {
     padding: 4px 0 6px;
     margin: 0 0;
