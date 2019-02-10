@@ -3,7 +3,7 @@ title: 'Data Cleaning Overview: FAA Annual Passenger Totals'
 author: Allison Moberger
 date: '2019-02-09'
 slug: data-cleaning-passenger-totals
-draft: true
+categories: [R, aviation]
 tags:
   - R
   - tidyverse
@@ -132,7 +132,7 @@ passengers
 
 Now before we do anything else, we're going to save this simple, tidy dataframe in a new .csv file, so that in the future we can use it directly without all the intermediate steps. And again, the choice at the beginning to hard-code in the data *directory* but not the *file* makes life much easier:
 
-```{r write}
+```{r write, eval = FALSE}
 cleaned_dir <- here(data_path, "clean")
 
 if (!dir.exists(cleaned_dir)) {
