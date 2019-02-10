@@ -1,0 +1,23 @@
+---
+title: 'Data Cleaning Overview: FAA Annual Passenger Totals'
+author: Allison Moberger
+date: '2019-02-09'
+slug: data-cleaning-passenger-totals
+draft: true
+categories: [R, aviation]
+tags:
+  - R
+  - tidyverse
+  - FAA data
+  - aviation
+  - data import
+  - data cleaning
+  - workflow
+---
+
+
+# Hi
+
+Here is some content.
+
+Now there's more.
