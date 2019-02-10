@@ -4,7 +4,6 @@ author: Allison Moberger
 date: '2019-02-09'
 slug: data-cleaning-passenger-totals
 draft: true
-categories: [R, aviation]
 tags:
   - R
   - tidyverse
